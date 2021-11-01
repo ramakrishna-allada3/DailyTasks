@@ -1,0 +1,9 @@
+Javascripts objects are the most important data types in the modern javascript. Objects are quite different from the primitive data types such as Number, Boolean, String etc. Objects are more complex when compared to the primitive data types which store only a single value only unlike objects which have the capability to store multiple values. Just like in other OOPS languages javascript objects also can have variables and functions which are called properties and methods respectively in the context of an object. In other words javascript objects are a set of key value pairs in which keys can be either variables or functions. For example, if your object is a car, it will have car name, brand, model, price, and methods like getCarPrice, getCarDetails etc.
+
+A JavaScript object has properties associated with it. A property of an object can be explained as a variable that is attached to the object. Object properties are basically the same as ordinary JavaScript variables, except for the attachment to objects. The properties of an object define the characteristics of the object. You access the properties of an object with a simple dot-notation:
+
+objectName.propertyName
+
+Properties of JavaScript objects can also be accessed or set using a bracket notation. Objects are sometimes called associative arrays, since each property is associated with a string value that can be used to access it. So, for example, you could access the properties of the myCar object as follows:
+
+myCar['make'] = 'Ford';
