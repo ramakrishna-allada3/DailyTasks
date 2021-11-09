@@ -1,0 +1,32 @@
+The lecture is all about how the browser renders a webpage. Parsing, layout and painting are subsets of rendering. So, first of all HTML and CSS are parsed with their respective parsers and a DOM tree will be rendered which in turn generated a layout and then the painting comes into picture. This is the high level understanding of how a webpage is rendered in the browser. 
+
+Parsing HTML:
+
+-> HTML is forgiving in nature.
+-> Parsing isn't straight forward.
+-> can be halted.
+-> Will do speculative parsing.
+-> It's reentrant.
+
+Tokenizer is one of the inbuilt tools in the browser which determines the start and closing tags in the HTML code.
+
+Render tree is actually multiple trees:
+
+-> Render Objects
+-> Render Styles
+-> Render Layers
+-> Line Boxes
+
+DOM node to Render Object:
+
+-> Visual Output
+-> Geometric Info
+-> Can layout and print
+-> Hold styles and computed metrics
+
+Paint setup: 
+
+-> Will take the layout rendered tree
+-> Create layers
+-> Incremental process
+-> Builds up over 12 phases

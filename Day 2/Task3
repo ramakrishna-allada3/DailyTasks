@@ -1,0 +1,11 @@
+typeof(1) - number
+typeof(1.1) - number
+typeof('1.1') - string
+typeof(true) - boolean
+typeof(null) - object
+typeof(undefined) - undefined
+typeof([]) - object
+typeof({}) - object
+typeof(NaN) - undefined
+
+Excluding the objects all the others are primitive types. But NaN is a property or value of the Number type. NaN stands for Not a Number. And type of NaN and undefined is undefined.  
