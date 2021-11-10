@@ -1,0 +1,73 @@
+// Resume in JSON format
+{
+    "Name": "Ramakrishna Allada",
+    "Email": "ramakrishna.allada3@gmail.com",
+    "Mobile": "7207967001",
+    "Location": "Visakhapatnam",
+    "Designation": "Software Developer",
+    "HeadLine": "Software engineer with excellent problem solving skills and the ability to perform well in a team.",
+    "Work Experience": {
+        "Company": "Tecnics",
+        "Role": "Software Engineer",
+        "Achievements/Tasks": [
+            "Integrated Okta's Multifactor authentication in TecMFA using state management architecture",
+            "Changed the user interface for a windows desktop application (TecMFA) with a better look, feel, and user experience",
+            "Built a console application as a module for TecMFA using python",
+            "Built an installer for TecMFA using Wix installer technology in XML",
+            "Developed an admin console web application with OIDC authentication flow in ASP.NET",
+            "Built UI components with Kendo UI framework in ASP.NET",
+            "Worked on Powershell scripts for dependency installation of desktop applications and modifying the system configuration",
+            "Worked on U2F, FIDO and OAUTH protocols with Yubikeys for multifactor authentication",
+            "Had experience in build related automation in visual studio",
+            "Worked with Postman and obfuscation tools like Smart Assembly"
+        ]
+    },
+    "Projects": {
+        "TecMFA": {
+            "Description": "Provides an extra authentication for desktops using Okta's multifactor authentication services"
+        },
+        "TecSSPR": {
+            "Description": "TecSSPR is a self service password recovery product which works with Okta services"
+        },
+        "TecTango": { 
+            "Description": "TecTango authenticates users on tapping a smart card as an extra authentication for windows desktops"
+        },
+        "TecUPS": { 
+            "Description": "TecUPS provisions a user in windows while authenticating with Okta" 
+        }
+    },
+    "Education": {
+        "Degree": "B.Tech Electrical Engineering",
+        "College": "University of petroleum and energy studies",
+        "City": "Dehradun"
+    },
+    "Skills": [
+        "C#",
+        "HTML",
+        "CSS",
+        "Javascript",
+        "Pytho",
+        "Xml",
+        "SQL",
+        "C",
+        "Jquery",
+        "Powershell",
+        "Batch script"
+    ],
+    "Achievements": "Received best performer award in the year 2020",
+    "Soft skills": [
+        "Good communication skills",
+        "Collaboration and team work",
+        "Time management",
+        "Problem solving and creativity"
+    ],
+    "Languages": [
+        "Telugu",
+        "English",
+        "Hindi"
+    ],
+    "Interests": [
+        "Learning React framework in my free time",
+        "Volunteering for exam preparation for hiring freshers"
+    ]
+}
