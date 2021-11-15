@@ -56,7 +56,7 @@ console.log([1, 2, 5, 8].reduce((a, b) => a+b, 0));
 (function() {
     var arr1 = [1, 2, 3, 4];
     var arr2 = [9, 8, 6, 5];
-    var mergeArr = arr1.concat(arr2).sort((a, b) => a -b);
+    var mergeArr = arr1.concat(arr2).sort((a, b) => a - b);
     var median1Index = mergeArr.length/2;
     var median2Index = median1Index - 1;
     console.log("Median: " + (median1Index+median2Index)/2);

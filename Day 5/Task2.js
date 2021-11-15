@@ -172,3 +172,97 @@ console.log(addProperty(sampleObject, "myKey", "value"));
 let removeProperty = (obj, prop) => (prop in obj) ? (delete obj[prop]) : undefined;
 console.log(removeProperty(sampleObject, "myKey"));
 
+// Return an array, 
+// where the first element is the count of positives numbers and the second element is sum of negative numbers.
+let countPositivesSumNegatives = (arr) => {
+    var result = [];
+    result.push(arr.filter(item => item > 0).length);
+    result.push(arr.filter(item => item < 0).reduce((a, b) => a+b, 0));
+    return result;
+}
+console.log(countPositivesSumNegatives([-5, 10, -3, 12, -9, 5, 90, 0, 1]));
+
+// filter out the positive numbers from an array and return the filtered array
+let getPositives = (arr) => arr.filter(item => item > 0);
+console.log(getPositives([-5, 10, -3, 12, -9, 5, 90, 0, 1]));
+
+// Write a function `powersOfTwo` which will return list of all powers of 2 from 0 to n (where n is an exponent).
+// n = 0 -> 2⁰ -> [1]
+// n = 1 -> 2⁰, 2¹ -> [1,2]
+// n = 2 -> 2⁰, 2¹, 2² -> [1,2,4]
+let getPowersOfTwo = (n) => {
+    var result = [];
+    for(let count = 0; count <= n; count++) {
+        result.push(Math.pow(2, count));
+    }
+    return result.join(',');
+}
+console.log(getPowersOfTwo(5));
+
+// Find the maximum number in an array of numbers
+let findMax = (arr) => arr.sort((a, b) => b-a)[0];
+console.log(findMax([-5, 10, -3, 12, -9, 5, 90, 0, 1]));
+
+// Checks whether the given number is a prime numnber or not
+function isPrime1(n) {
+    if (isNaN(n) || !isFinite(n) || n % 1 || n < 2) return false;
+    var m = Math.sqrt(n); //returns the square root of the passed value
+    for (var i = 2; i <= m; i++)
+        if (n % i == 0) return false;
+    return true;
+}
+
+// Print first 100 prime numbers
+let printFirst100PrimeNumbers = () => {
+    var primes = [];
+    for (let counter = 2; primes.length < 100; counter++){
+        if (isPrime1(counter)) {
+            console.log(counter);
+            primes.push(counter);
+        }
+    }
+    console.log(primes.join(','));
+}
+
+printFirst100PrimeNumbers();
+
+// Create a function that will return in an array
+// the first “nPrimes” prime numbers greater than a particular number “startAt”
+
+let getPrimes = (nPrimes, startAt) => {
+    var primes = [];
+    for (let counter = startAt; primes.length < nPrimes; counter++){
+        if (isPrime1(counter)) {
+            console.log(counter);
+            primes.push(counter);
+        }
+    }
+    console.log(primes);
+}
+
+console.log(getPrimes(10, 11));
+
+// Returns a reversed string
+let reversestring = (str) => str.split("").reverse().join("");
+console.log(reversestring("ramki"));
+
+function mergeArrays(ar1, ar2)
+{
+    var result = [];//this will add the first array to the result array
+    for(let el of ar1) {
+        result.push(el);
+    }
+
+    for(let item of ar2) {
+        result.push(item);
+    }
+ 
+    return result;
+}
+console.log(mergeArrays([1, 3, 5], [2, 4, 6]));
+
+function sumCSV(string) {
+    var numbers = string.split(',');
+    return numbers.map(item => parseInt(item)).reduce((a, b) => a+b, 0)
+}
+console.log(sumCSV("1.5, 2.3, 3.1, 4, 5.5, 6, 7, 8, 9, 10.9"));
