@@ -54,7 +54,12 @@ console.log([1, 2, 5, 8].reduce((a, b) => a+b, 0));
 
 // Return median of two sorted arrays of same size
 (function() {
-
+    var arr1 = [1, 2, 3, 4];
+    var arr2 = [9, 8, 6, 5];
+    var mergeArr = arr1.concat(arr2).sort((a, b) => a -b);
+    var median1Index = mergeArr.length/2;
+    var median2Index = median1Index - 1;
+    console.log("Median: " + (median1Index+median2Index)/2);
 })();
 
 // Remove duplicates from an array
@@ -65,5 +70,11 @@ console.log([1, 2, 5, 8].reduce((a, b) => a+b, 0));
 
 // Rotate an array by k times
 (function() {
-
+        var k = 2;
+        arr = [1, 2, 3, 4, 5];
+        for(let count = 0; count < 2; count++) {
+            var poppedElement = arr.shift();
+            arr.push(poppedElement);
+        }
+        console.log(arr);
 })();
