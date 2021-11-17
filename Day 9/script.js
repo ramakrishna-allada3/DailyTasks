@@ -35,7 +35,12 @@ getRestCountries().then(data => {
     }));
 
     // d. Print the total population of countries using reduce function
-    // console.log(data.reduce(function(a, b) {
-    //     (a.population + b.population);
-    // }, 0));
+    var populationList = [];
+    data.forEach(country => {
+    populationList.push(country.population);        
+    });
+    console.log("Total population: " + populationList.reduce((a, b) => a + b, 0));
+
+    // e. Print the country which uses US Dollars as currency
+    
 });
