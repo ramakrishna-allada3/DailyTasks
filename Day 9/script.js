@@ -42,5 +42,10 @@ getRestCountries().then(data => {
     console.log("Total population: " + populationList.reduce((a, b) => a + b, 0));
 
     // e. Print the country which uses US Dollars as currency
+
+    console.log("USD countries: ");
     
+    data.filter(
+        country => (country.currencies !== undefined && "USD" in country.currencies)).forEach(
+            country => console.log(country.name.common));
 });
