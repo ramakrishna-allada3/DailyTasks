@@ -1,32 +1,35 @@
-body {
-    background-color: dimgray;
+* {
+    padding: 5px;
 }
 
-.container {
-    height: 400px;
-    width: 600px;
-    background-color: white;
+th {
+    background-color: red;
+}
+
+input, input:focus {
+    outline: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.full-width {
+    width: 98%;
+}
+
+table {
     margin: auto;
+    border: 3px solid black;
 }
 
-.rectangle {
-    height: auto;
-    width: auto;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-    align-items: center;
+.small-font {
+    font-size: small;
 }
 
-.heading {
-    color: red;
-    text-align: center;
+.large-font {
+    font-size: large;
 }
 
-.first-name-container {
-    display: flex;
-}
-
-.last-name-container {
-    display: flex;
+.inline-block-span {
+    display: inline-block;
 }
