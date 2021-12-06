@@ -1,0 +1,32 @@
+body {
+    background-color: dimgray;
+}
+
+.container {
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    margin: auto;
+}
+
+.rectangle {
+    height: auto;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    align-items: center;
+}
+
+.heading {
+    color: red;
+    text-align: center;
+}
+
+.first-name-container {
+    display: flex;
+}
+
+.last-name-container {
+    display: flex;
+}
